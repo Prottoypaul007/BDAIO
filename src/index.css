@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+
+body {
+  background-color: #f8fafc;
+}
+
+@theme {
+  --color-olympiad-blue: #0f2862;
+  --color-olympiad-accent: #facc15;
+}
+
+body {
+  background-color: #f8fafc;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+
+/* Optional: Pause the gallery when the user hovers over it */
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
