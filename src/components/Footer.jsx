@@ -20,7 +20,8 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-bold mb-4 uppercase tracking-wider text-sm">Contact Us</h4>
           <p className="text-sm mb-2">Dhaka, Bangladesh</p>
-          <p className="text-sm mb-2">Email: info@bdaio.org</p>
+          <p className="text-sm mb-2">Office: Green City Center, Level 12, 758 Satmasjid Road, Dhaka 1209, Bangladesh</p>
+          <p className="text-sm mb-2">Email:  bdaio@bdosn.org</p>
           <p className="text-sm text-gray-500 mt-6">&copy; {new Date().getFullYear()} BDAIO. All rights reserved.</p>
         </div>
       </div>

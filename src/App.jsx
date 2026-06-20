@@ -4,9 +4,11 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import LearningPath from './pages/LearningPath';
 import Blog from './pages/Blog';
-import About from './pages/About'; // <--- ADD THIS IMPORT
+import About from './pages/About';
+import Syllabus from './pages/Syllabus';
+import FAQ from './pages/FAQ';           // Keep just one of these!
+import Rules from './pages/Rules';       
 import PlaceholderPage from './pages/PlaceholderPage';
-
 export default function App() {
   return (
     <Router>
@@ -15,15 +17,17 @@ export default function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
             
             {/* UPDATE THIS LINE */}
-            <Route path="/about" element={<About />} /> 
+            <Route path="/syllabus" element={<Syllabus />} />
             
-            <Route path="/syllabus" element={<PlaceholderPage title="Syllabus & Rules" />} />
             <Route path="/committee" element={<PlaceholderPage title="Executive Committee" />} />
             <Route path="/results" element={<PlaceholderPage title="Olympiad Results" />} />
             <Route path="/learning-path" element={<LearningPath />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/rules" element={<Rules />} />
             <Route path="/contact" element={<PlaceholderPage title="Contact Us" />} />
           </Routes>
         </main>

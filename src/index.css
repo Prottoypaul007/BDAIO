@@ -10,6 +10,7 @@ body {
 @theme {
   --color-olympiad-blue: #0f2862;
   --color-olympiad-accent: #facc15;
+  --font-bangla: "Hind Siliguri", sans-serif;
 }
 
 body {

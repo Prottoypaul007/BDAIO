@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import g8 from '../image/g8.jpeg';
 
 export default function About() {
   return (
@@ -52,7 +53,7 @@ export default function About() {
             <div className="relative">
               <div className="absolute inset-0 bg-green-500 transform translate-x-4 translate-y-4 rounded-xl opacity-20"></div>
               <img 
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop" 
+                src={g8}
                 alt="Students collaborating" 
                 className="relative rounded-xl shadow-lg w-full object-cover aspect-square md:aspect-auto md:h-[500px]"
               />
